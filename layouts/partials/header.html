@@ -1,0 +1,18 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="{{ delimit .Keywords "," }}">
+    <meta name="author" content="{{ delimit .Site.Authors "," }}">
+    <meta name="description" content="{{ .Description }}">
+	{{ .Hugo.Generator }}
+
+	<link rel="icon" type="image/png" href="/site/favicon.png">
+	<link rel="icon" type="image/jpeg" href="/site/favicon.jpg">
+	<link rel="icon" type="image/x-icon" href="/site/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/eocene/css/bootstrap.min.css">
+
+	<title>{{ .Title }} - {{ .Site.Title }}</title>
+</head>
+<body lang="{{ .Site.LanguageCode }}"> 
