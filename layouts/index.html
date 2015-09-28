@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<div class="content">
+{{ range where .Site.Pages "Section" "homepage" }}
+<div class="section section-{{ .Params.style }}">
+	<div class="section-center">
+		<h2>{{ .Title }}</h2>
+		{{ .Content }}
+	</div>
+	</div>
+{{ end }}
+</div>
+{{ partial "footer.html" . }}
